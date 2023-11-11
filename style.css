@@ -1,0 +1,266 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: rgb(231, 231, 231);
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    padding: 0;
+    background-color: #021a38;
+    max-height: 100px;
+    
+}
+
+
+.menu {
+    position: absolute;
+    right: 15px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-left: 20px; 
+}
+
+.menu a {
+    text-decoration: none;
+    color: white; 
+    font-size: 18px;
+    position: relative;
+}
+.menu a.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px; 
+    background-color: white; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out; 
+}
+.menu a:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px; /* Tamanho da linha (borda) */
+    background-color: #ffffff; /* Cor da linha */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out; /* Efeito de transição */
+}
+
+.scroll-reveal {
+    position: relative;
+}
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+.scroll-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+#contact-form {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px;
+  }
+  
+  input, textarea {
+    margin-bottom: 16px;
+    padding: 8px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  .container {
+    background-color: rgb(231, 231, 231);;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-around;
+    position: inherit;
+    padding: 100px
+  }
+
+
+
+
+
+.img1 {
+        border-radius: 30% 70% 30% / 30% 56% 44% 70%;
+        width: 650px;
+        height: 600px;
+        left: 500px;
+        
+         
+}
+.pai{
+    display: flex;
+    position: inherit;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 100%;
+}
+.filho1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 30px ;
+    
+}
+
+
+.but1{
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: -0.05em;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 3px
+
+}
+.social-media{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+
+}
+.social-media a{
+    margin: 15px;
+}
+
+/* Estilização para a seção "content" */
+.content {
+    background-color: #021a38;
+    padding: 40px;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.content h3 {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.content p {
+    font-size: 16px;
+    color: #888;
+}
+
+.content .img2,
+.content .img3,
+.content .img4 {
+    border-radius: 10px;
+}
+
+/* Estilização para a seção "container2" */
+.container2 {
+    background-color: rgb(231, 231, 231);
+    padding: 40px;
+    text-align: center;
+}
+
+.container2 h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.container2 h4 {
+    font-size: 16px;
+    color: #666;
+}
+
+.container2 .img5 {
+    border-radius: 50%;
+}
+
+/* Estilização para o rodapé (footer) */
+.footer {
+    background-color:#021a38;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+.footer .socialmedia a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilização para o formulário de contato */
+.footer #contact-form {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.footer label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer input[type="text"],
+.footer input[type="email"],
+.footer textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.footer button {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Rodapé de direitos autorais */
+.footer p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+  
